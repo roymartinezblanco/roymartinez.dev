@@ -7,7 +7,7 @@ bigimg: /img/posts/201908/eubg.jpg
 ---
 
 
-When working with our customers that have a global user base, it can be safe to assume that they will have user privacy settings per region. For example, a customer had a requirement that we don't create cookies on the user's browser if they have opted out of any analytics.
+When working with mpulse tenats that have a global user base, it can be safe to assume that they will have user privacy settings per region. For example, a customer had a requirement that we don't create cookies on the user's browser if they have opted out of any analytics.
 
 ***Note*: In this customers use case they set a cookie in the user's browser that indicates if they have opted out or not.**
 
