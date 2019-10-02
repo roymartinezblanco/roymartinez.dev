@@ -2,7 +2,7 @@
 layout: post
 title: Cookieless mPulse
 tags: [GDPR,EU, RUM, Analysis,Cookie, mPulse, Property Manager]
-image: /img/posts/201908/mpulselogo.png
+image: /img/posts/201910/python.png
 bigimg: /img/posts/201908/eubg.jpg
 ---
 
