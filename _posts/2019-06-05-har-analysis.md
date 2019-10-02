@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HTTP Archive (Har) Analysis
+image: /img/posts/201906/httparchive.png
 tags: [Google,Chrome, devtools, Analysis,automation]
 ---
 
@@ -36,7 +37,7 @@ awk.
 
 ### Export Session to har.
 
-![](https://roymartinez.dev/img/1*e7UONEoWB-Ob6D_x0nQ9Kg.png) 
+![](https://roymartinez.dev/img/posts/201906/1*e7UONEoWB-Ob6D_x0nQ9Kg.png) 
 
 Open Dev Tools and refresh your site, once you do this you will see the network
 tab populated with all the requests.
@@ -46,14 +47,14 @@ will export the session data to a .har file to the directory of your choosing.
 
 ### Parse the har file with JQ
 
-![https://stedolan.github.io/jq/](https://roymartinez.dev/img/0*8_VJsutqgdXmay7E.png)
+![https://stedolan.github.io/jq/](https://roymartinez.dev/img/posts/201906/0*8_VJsutqgdXmay7E.png)
 
 JQ is a JSON processor that allows us to easily query for the fields we need and
 also condition what data we get.
 
 First, install it if you don’t have it. For mac, you can use brew:
 
-![](https://roymartinez.dev/img/1*4yIsfJZ3Ape_-S0xWRQktQ.png)
+![](https://roymartinez.dev/img/posts/201906/1*4yIsfJZ3Ape_-S0xWRQktQ.png)
 
 
 The following will look at all the requests with the domain **“medium.com”** in
@@ -65,7 +66,7 @@ the downloaded har file and get the value of the response header **“cf-ray”*
 
 If we look at the har file created it has an array **“entries”** that has all
 the requests and it has the responses within it.
-![](https://roymartinez.dev/img/1*cCB7uLrAnbHgt6YCVi4EQQ.png)
+![](https://roymartinez.dev/img/posts/201906/1*cCB7uLrAnbHgt6YCVi4EQQ.png)
 We will start by telling JQ to get all the requests/responses within entries.
 
 
@@ -88,7 +89,7 @@ We now have successfully extracted the header information we want, but I want to
 go a bit further and extract the DC name from the values that as a Hash that is
 part of it as seen below.
 
-![](https://roymartinez.dev/img/1*4yIsfJZ3Ape_-S0xWRQktQ.png)
+![](https://roymartinez.dev/img/posts/201906/1*4yIsfJZ3Ape_-S0xWRQktQ.png)
 
 
 ### Extract DC name with AWK
@@ -111,4 +112,4 @@ Finally, we have the data we want. But in my case, I sorted and counted the
 instances of each DC to provide additional insights. (The example would have
 been better if more than one DC was used :) but you get the point.)
 
-![](https://roymartinez.dev/img/1*JuBOD1TzeFzt-P8pNmGwsg.png)
+![](https://roymartinez.dev/img/posts/201906/1*JuBOD1TzeFzt-P8pNmGwsg.png)
