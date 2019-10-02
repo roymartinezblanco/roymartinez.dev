@@ -38,7 +38,9 @@ This project will help mostly Akamai customers but the Audit list functionality 
 ## Prerequisites/Requirements
 I've provided the requirements document to help install all dependencies.
 
-``` pip install -r requirements.txt```
+```sh
+pip install -r requirements.txt
+```
 
     asn1crypto==0.24.0
     certifi==2019.9.11
@@ -120,7 +122,9 @@ For multi-account users if you have **switch key** credentials you can specify t
 ## Examples (use cases)
 * <span style="color:orange">**Audit list of domains**</span>
 
-    ```python3 ssl-audit.py --audit list --domains roymartinez.dev```
+    ```sh
+    python3 ssl-audit.py --audit list --domains roymartinez.dev
+    ```
 <h1 align="center">
   <br>
       <img src="/img/posts/201910/ssl-audit-domain-list.png">
@@ -129,7 +133,9 @@ For multi-account users if you have **switch key** credentials you can specify t
 
 * <span style="color:orange">**Audit list of domains on file**</span>
 
-    ```python3 ssl-audit.py --audit file --file examples/list.txt --file-type list```
+    ```sh
+    python3 ssl-audit.py --audit file --file examples/list.txt --file-type list
+    ```
 <h1 align="center">
   <br>
       <img src="/img/posts/201910/ssl-audit-domain-list-file.png">
@@ -138,7 +144,33 @@ For multi-account users if you have **switch key** credentials you can specify t
 
 * <span style="color:orange">**Audit config with section and account ID**</span>
 
-    ```python3 ssl-audit.py --audit config --config-name roymartinez.dev --section allswitch --account-key 1-xyz```
+    ```sh
+    python3 ssl-audit.py --audit config --config-name roymartinez.dev --section allswitch --account-key 1-xyz
+    ```
+    Example Output:
+    ```json
+    {
+    "items": [
+        {
+        "propertyName": "roymartinez.dev",
+        "certicates": [
+            {
+            "Domain": "roymartinez2.dev",
+            "Serial": "xxxxxxxxxx",
+            "ExpDate": "2020-06-20",
+            "DaysLeft": 261
+            },
+            {
+            "Domain": "roymartinez3.dev",
+            "Serial": "xxxxxxxxxx",
+            "ExpDate": "2020-06-21",
+            "DaysLeft": 262
+            }
+        ]
+        }
+    ]
+    }
+    ```
 <h1 align="center">
   <br>
       <img src="/img/posts/201910/ssl-audit-config.png">
