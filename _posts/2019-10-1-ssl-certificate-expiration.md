@@ -11,7 +11,7 @@ A tool to help audit Akamai Property Manager Configurations (Local and Remote) a
 
 <span style="color:red">The goal</span> behind this project is to provide an easy way to audit  <span style="color:red">**audit ssl certificate expiration date**</span>, this is to help us keep an eye over any soon to expire certificate and avoid possible outages due to lack of visibility. 
 
-The latest version can be found in my github page here https://github.com/roymartinezblanco/Akamai-SSL-Expiration-Audit 
+The latest version can be found in my [github page here](https://github.com/roymartinezblanco/Akamai-SSL-Expiration-Audit)
 
 <h1 align="center">
   <br>
