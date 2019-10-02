@@ -74,7 +74,7 @@ Currently, for version 0.1 this script <span style="color:red">**will not look a
 | --file        | with audit type "file".  | string | Path to the file to be parsed. |
 | --file-type   |   | string | Allowed values: {akamai, list}. You can provide a file that is either a list of DNS records or an Akamai Property Manager JSON configuration. The default value for this argument is "Akamai", meaning if parsing a PM configuration it is optional.|
 | --config-name | with audit type "config".  |  list | List of Akamai Property names.|
-| --section     |   | string | | name of EdgeRC credential section to be used for Akamai PAPI.
+| --section     |   | string | Name of EdgeRC credential section to be used for Akamai PAPI.
 | --account-key |   | string | Akamai account ID to be audited (SwitchKey) |
 | --verbose     |   |  None | Print debug information.|
 
