@@ -3,7 +3,7 @@ layout: post
 title: SSL Certificate Expiration Audit
 tags: [python, Property Manager, Automation, Akamai]
 image: /img/posts/201910/python.png
-bigimg: /img/posts/201910/audit-banner.jpg
+bigimg: /img/posts/201910/audit-banner.png
 ---
 
 ## What is this?
