@@ -3,15 +3,15 @@ layout: post
 title: SSL Certificate Expiration Audit
 tags: [python, Property Manager, Automation, Akamai]
 image: /img/posts/201910/python.png
-bigimg: /img/posts/201910/ssl-audit.jpg
+bigimg: /img/posts/201910/audit-banner.jpg
 ---
 
 ## What is this?
 A tool to help audit Akamai Property Manager Configurations (Local and Remote) and DNS Record List for SSL Certificate Expiration dates.
 
-<span style="color:yellow">The goal</span>, behind this project is to provide an easy way to audit  <span style="color:yellow">**audit ssl certificate expiration date**</span>, this is to help us keep an eye over any soon to expire certificate and avoid possible outages due to lack of visibility. 
+<span style="color:red">The goal</span>, behind this project is to provide an easy way to audit  <span style="color:red">**audit ssl certificate expiration date**</span>, this is to help us keep an eye over any soon to expire certificate and avoid possible outages due to lack of visibility. 
 
-The lastest version can be found in my github page here https://github.com/roymartinezblanco/Akamai-SSL-Expiration-Audit 
+The latest version can be found in my github page here https://github.com/roymartinezblanco/Akamai-SSL-Expiration-Audit 
 
 <h1 align="center">
   <br>
@@ -144,5 +144,3 @@ For multi-account users if you have **switch key** credentials you can specify t
       <img src="/img/posts/201910/ssl-audit-config.png">
   <br>
 </h1>
-
-## How does it work?
