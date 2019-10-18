@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SSL Certificate Expiration Audit
+title: Kubernetes Reverse Proxy Deployment
 tags: [python, Automation, Kubernetes,Docker,Helm ]
 image: /img/posts/201910/kubernetes.png
 bigimg: /img/posts/201910/health.gif
