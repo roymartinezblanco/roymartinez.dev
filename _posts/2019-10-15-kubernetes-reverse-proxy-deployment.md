@@ -3,7 +3,7 @@ layout: post
 title: Kubernetes Reverse Proxy Deployment
 tags: [python, Automation, Kubernetes,Docker,Helm ]
 image: /img/posts/201910/kubernetes.png
-bigimg: /img/posts/201910/health-banner.png
+bigimg: /img/posts/201910/health-banner.jpg
 ---
 
 I wanted to share my experience with this project where I created a Kubernetes Cluster with 2 apps that talk to each other.
