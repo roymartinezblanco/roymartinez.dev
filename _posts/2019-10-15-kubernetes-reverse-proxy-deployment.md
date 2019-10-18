@@ -111,7 +111,7 @@ class HTTPRequestHandler(BaseHTTPRequestHandler):
 ### Deploy APP Server Docker Image
 Because we need to deploy this application to Kubernetes we need to create an image that we will later deploy in our cluster. 
 
-To do this I created my image with this [dockerfile](https://github.com/roymartinezblanco/Kubernetes-Reverse-Proxy-Deployment/blob/master/docker/app-server.py) (All Docker files can be found under the /docker/ directory.). I chose to use alpine since its lightweight, then copied my app and requirements for it. Which I generated with the command `python3 -m  pip freeze > requirements.txt`.
+To do this I created my image with this [dockerfile](https://github.com/roymartinezblanco/Kubernetes-Reverse-Proxy-Deployment/blob/master/docker/App-Dockerfile) (All Docker files can be found under the /docker/ directory.). I chose to use alpine since its lightweight, then copied my app and requirements for it. Which I generated with the command `python3 -m  pip freeze > requirements.txt`.
 
 ```docker
 FROM python:3.7-alpine
