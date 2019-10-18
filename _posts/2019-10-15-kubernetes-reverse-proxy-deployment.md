@@ -3,7 +3,7 @@ layout: post
 title: Kubernetes Reverse Proxy Deployment
 tags: [python, Automation, Kubernetes,Docker,Helm ]
 image: /img/posts/201910/kubernetes.png
-bigimg: /img/posts/201910/health.gif
+bigimg: /img/posts/201910/health-banner.png
 ---
 
 I wanted to share my experience with this project where I created a Kubernetes Cluster with 2 apps that talk to each other.
@@ -139,7 +139,15 @@ At this point the image is ready to be used.
 ```sh
 docker run -p 80:8000 python-app-server
 ```
-![Test APP](/img/posts/201910/test-app.png)
+
+<h1 align="center">
+  <br>
+      <img src="/img/posts/201910/test-app.png" alt="Test APP" loading="lazy">
+  <br>
+</h1>
+
+
+![]()
 
 ## Proxy Server
 
@@ -320,7 +328,7 @@ helm create chart # Not a very creative name :)
 
 <h1 align="center">
   <br>
-      <img src="assets/dir.png">
+      <img src="/img/posts/201910/dir.png" loading="lazy">
   <br>
 </h1>
 
@@ -431,14 +439,20 @@ At this point I have everything to create my `helm chart installation`.
 ```sh
 helm install chart/
 ```
-![Helm install](/img/posts/201910/helm-install.png)
+<h1 align="center">
+  <br>
+      <img src="/img/posts/201910/helm-install.png)" alt="Helm install" loading="lazy">
+  <br>
+</h1>
+
+![](
 
 Just like that everything was created. Now we need to configuring the proxy server. To do this, we need to connect to the proxy pod with the following command:
 ```sh
 kubectl exec -it python-proxy-server-xxxxxxx -- /bin/sh
 ```
 
-Now we need to modify the config.yaml file with the IP's from the previous output.
+Now we need to modify the config.yaml file with the IP from the previous output.
 ```yaml
 proxy:
   listen:
@@ -470,7 +484,12 @@ We will be running two commands, one to see a response from the APP's and anothe
 http http://192.168.99.101/ --print=hb
 http http://192.168.99.101/fail --verify=no --print=hb
 ```
-![Error Prevention](/img/posts/201910/health.gif)
+
+<h1 align="center">
+  <br>
+      <img src="/img/posts/201910/health.gif)" alt="Error Prevention" loading="lazy">
+  <br>
+</h1>
 
 
 
