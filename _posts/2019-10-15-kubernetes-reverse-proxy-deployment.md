@@ -487,7 +487,7 @@ http http://192.168.99.101/fail --verify=no --print=hb
 
 <h1 align="center">
   <br>
-      <img src="/img/posts/201910/health.gif)" alt="Error Prevention" loading="lazy">
+      <img src="/img/posts/201910/health.gif" alt="Error Prevention" loading="lazy">
   <br>
 </h1>
 
