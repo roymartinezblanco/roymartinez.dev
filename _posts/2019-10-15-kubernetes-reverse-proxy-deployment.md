@@ -158,8 +158,6 @@ docker run -p 80:8000 python-app-server
 </h1>
 
 
-![]()
-
 ## Proxy Server
 
 The application will accept HTTP requests on port a configurable port and route traffic to services that are also configurable.
