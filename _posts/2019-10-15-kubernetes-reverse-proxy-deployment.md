@@ -6,10 +6,6 @@ image: /img/posts/201910/kubernetes.png
 bigimg: /img/posts/201910/health.gif
 ---
 
-
-
-# Introduction 
-
 I wanted to share my experience with this project where I created a Kubernetes Cluster with 2 apps that talk to each other.
 Goal: Create an application that will be fronted by a Proxy Server that will act as a load balancer for the app servers. 
 
