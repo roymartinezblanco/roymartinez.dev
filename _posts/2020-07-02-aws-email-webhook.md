@@ -1,7 +1,7 @@
 ---
 layout: post
 title: From Email to Webhooks with AWS
-image: /img/posts/2020/webhook/alert.png
+image: /img/posts/2020/webhook/alert.jpg
 bigimg: /img/posts/2020/webhook/Arch.png
 tags: [aws,akamai, devops, cicd, jenkins, automation]
 ---
