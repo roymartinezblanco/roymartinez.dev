@@ -12,7 +12,8 @@ Instead of exposing our credentials on the pipeline script or adding it to the s
 
 ## Jenkins
 
-Jenkins has the option for us to upload a file that will be stored and encrypted ( You can read more about this here.).
+Jenkins has the option for us to upload a file that will be stored and encrypted.
+[You can read more about this here](https://www.jenkins.io/doc/book/using/using-credentials/)
 
 This enables us to use our Edgerc file without exposing the credentials. For this example, we are using the Global Domain for them to be accessible to all Projects but this can be and should be limited to the scope of your pipeline.
 
