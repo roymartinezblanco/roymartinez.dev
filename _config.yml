@@ -24,8 +24,8 @@ description: Hi There!
 # List of links in the navigation bar
 navbar-links:
   About me: "aboutme"
-  Resources:
-    - Trainings: "trainings"
+#  Resources:
+#    - Trainings: "trainings"
 #    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
 #    - GitHub Pages: "https://pages.github.com/"
