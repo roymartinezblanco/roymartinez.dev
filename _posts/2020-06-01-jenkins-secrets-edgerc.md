@@ -5,7 +5,7 @@ image: /img/posts/2020/secrets/secret.png
 tags: [akamai, devops, cicd, jenkins, automation]
 ---
 
-TLDR; We have a lot of great tutorials on how to create a Jenkins Pipeline but I wanted to share how we can also store our `Edgerc` credentials file safely within Jenkins.
+TLDR; We have a lot of great tutorials on how to create a Jenkins Pipeline but I wanted to share how we can also store Akamai's `Edgerc` credentials file safely within Jenkins.
 
 ---
 Instead of exposing our credentials on the pipeline script or adding it to the server we are going add the Edgerc file as a Secret file, this allows us to safely store and use them.
