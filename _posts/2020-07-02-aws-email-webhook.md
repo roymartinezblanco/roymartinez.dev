@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Going from Email notifications to Webhooks with AWS
+title: From Email to Webhooks with AWS
 image: /img/posts/2020/webhook/alert.png
 bigimg: /img/posts/2020/webhook/Arch.png
 tags: [aws,akamai, devops, cicd, jenkins, automation]
 ---
 
-> https://github.com/roymartinezblanco/AWS-Email-Webhook
+
 
 TLDR; This project is meant to provide a reference architecture to implement an email-based webhook that would trigger Jobs/Builds on a system like `Jenkins`.
 
 ---
+
+> https://github.com/roymartinezblanco/AWS-Email-Webhook
 
 A challenge we face in DevOps is when we can't notify/trigger a pipeline about a change in a system/service . Not having this capability is a challenge especially when someone makes changes to a configuration making it `out of sync`. 
 
