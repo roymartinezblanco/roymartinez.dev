@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DevOps Secrets | Jenkins + Edgerc
+title: DevOps Secrets - Jenkins + Edgerc
 image: /img/posts/2020/secrets/secret.png
 tags: [akamai, devops, cicd, jenkins, automation]
 ---
