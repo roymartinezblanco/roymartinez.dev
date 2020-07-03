@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Going from Email notifications to Webhooks with AWS
-image: /img/gcpblog.jpg
+image: /img/posts/2020/webhook/alert.png
+bigimg: /img/posts/2020/webhook/Arch.png
 tags: [aws,akamai, devops, cicd, jenkins, automation]
 ---
 
