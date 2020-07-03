@@ -145,7 +145,7 @@ SES will be storing the messages we need to permit it to do so. [Full s3 IAM Pol
 
 ![](/img/posts/2020/webhook/lambda.png) **Lambda**
 
-Lastly, Lamdba needs to be invoked by `SES`. [Full Lambda IAM Policy Example](https://github.com/roymartinezblanco/AWS-Email-Webhook/blob/master/Policies/lambda.policy.json)
+Lastly, Lambda needs to be invoked by `SES`. [Full Lambda IAM Policy Example](https://github.com/roymartinezblanco/AWS-Email-Webhook/blob/master/Policies/lambda.policy.json)
 
 ```json
 {
@@ -184,7 +184,7 @@ We should only have one Hook per property but many properties per account (all t
 
 Once all of the above is ready you can test the function by using the configured tests mentioned above, the reason for two tests is that Akamai Activations that are `Automated` ([Terraform](https://www.terraform.io/docs/providers/akamai/index.html), etc) have a null value in the `submitted by` field. Knowing this we used a hardcoded email from the test `['human@example.com','automated@example.com']` to simulate what would've happened. This is because we want to trigger a webhook only for human-made changes that would make our local version (git) to be out of sync, thus, trigger a merge of what is now active vs what is stored locally.
 
-![](/img/posts/2020/webhook/lamdbalog.jpg)
+![](/img/posts/2020/webhook/lambdalog.jpg)
 
 **Have fun!...**
 
