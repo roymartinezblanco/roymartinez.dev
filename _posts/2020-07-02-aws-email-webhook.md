@@ -186,26 +186,6 @@ Once all of the above is ready you can test the function by using the configured
 
 ![](/img/posts/2020/webhook/lamdbalog.jpg)
 
-## Have fun!...
+**Have fun!...**
 
----    
-
-## Contribute
-
-Want to contribute? Sure why not! just let me know!
-
-## Author
-
-I’m a photography enthusiast but in business hours I am a Computer Science analyst. More about me here: [https://roymartinez.dev](https://roymartinez.dev)
-
-## Licensing
-
-I am providing code and resources in this repository to you under an open-source license. Because this is my repository, the license you receive to my code and resources is from me and not my employer (Akamai).
-
-```
-Copyright 2019 Roy Martinez
-
-Creative Commons Attribution 4.0 International License (CC BY 4.0)
-
-http://creativecommons.org/licenses/by/4.0/
-```
+---
