@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTTP Archive (Har) - Pandas Exploratory Analysis
-image: /img/posts/2020/harexploratory/pandas.jpg
+image: /img/posts/2020/harexploratory/pandas-icon.jpg
 bigimg: /img/posts/2020/harexploratory/explore.jpg
 tags: [http,performance,akamai,datascience, automation]
 ---
@@ -190,7 +190,7 @@ del tmp
 ![First vs Third](/img/posts/2020/harexploratory/pie_first_vs_third.png)  
 
 ```python
-tmp = dat_clean 
+tmp = dat_clean
 tmp = tmp.groupby(['host','host-type','url']).size().reset_index(name='Count')
 tmp = tmp.groupby(['host-type']).sum().reset_index()
 tmp = tmp.sort_values(by=['Count'],ascending=False)
