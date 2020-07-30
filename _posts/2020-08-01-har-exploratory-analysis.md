@@ -169,7 +169,8 @@ Here are some of the analysis that can be done with this setup and code snippet 
 ### General
 
 #### 3rd Party Timings
-![3rd Party Timings](/img/posts/2020/harexploratory/pandas.jpg) 
+
+![3rd Party Timings](/img/posts/2020/harexploratory/3rd-connect-timings.png) 
 
 ```python
 tmp = dat_clean
