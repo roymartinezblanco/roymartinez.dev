@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HTTP Archive (Har) - Pandas Exploratory Analysis
-image: /img/posts/2020/harexploratory/pandas-icon.jpg
+image: /img/posts/2020/harexploratory/pandas-icon.png
 bigimg: /img/posts/2020/harexploratory/explore.jpg
 tags: [http,performance,akamai,datascience, automation]
 ---
