@@ -18,25 +18,13 @@ What am I doing differently? This time I used Python libraries to provide multip
 
 Libraries used (Pandas):
 
-<table>
-
-<tr>
-<td> 
-
 ![Pandas](/img/posts/2020/harexploratory/pandas.jpg)
-
-</td>
-<td>
 
 ```python
 import json, os,re
 import pandas as pd
 import  matplotlib.pyplot as plt
 ```
-
-</td>
-</tr>
-</table>
 
 I preferred to run this on a Jupiter Notebook, for simpler use and management but you can run this as a script  if you want. (see this for a quick guide if you want to do this too [Jupyter Guide](https://jupyter.org/install)).
 
@@ -180,18 +168,8 @@ Here are some of the analysis that can be done with this setup and code snippet 
 
 ### General
 
-<table>
-<tr>
-<td> Chart </td> <td> Snippet </td>
-</tr>
-<tr>
-<td> 
-
+#### 3rd Party Timings
 ![3rd Party Timings](/img/posts/2020/harexploratory/pandas.jpg) 
-
-</td>
-<td>
-
 
 ```python
 tmp = dat_clean
@@ -206,16 +184,9 @@ plt.show()
 del tmp
 ```
 
-
-</td>
-</tr>
-<tr>
-<td> 
+#### First vs Third
 
 ![First vs Third](/img/posts/2020/harexploratory/pie_first_vs_third.png)  
-
-</td>
-<td>
 
 ```python
 tmp = dat_clean 
@@ -229,42 +200,9 @@ plt.tight_layout()
 plt.show()
 ```
 
-</td>
-</tr>
-
-<tr>
-<td> 
-
-![RO vs Origin](/img/posts/2020/harexploratory/ro_vs_or.png)  
-
-</td>
-<td>
-
-```python
-tmp = dat_clean
-tmp = tmp[tmp['host-type'] == 'First Party']
-tmp = tmp[tmp['ext'].isin(['css','js'])]
-tmp = tmp[["ext", "content-length","content-length-origin"]]
-tmp = tmp.groupby('ext')["content-length","content-length-origin"].mean().reset_index()
-tmp.plot(x="ext", kind="bar",label=['RO','RAW'])
-plt.title('First Party Resource Optimizer content-length vs Origin')
-plt.xlabel('Extensions')
-plt.ylabel('Bytes')
-plt.legend(["RO", "Origin"]);
-plt.show()
-del tmp
-```
-
-</td>
-</tr>
-
-<tr>
-<td> 
+#### 3rd Connect Timings
 
 ![3rd Connect Timings](/img/posts/2020/harexploratory/3rd-connect-timings.png)  
-
-</td>
-<td>
 
 ```python
 tmp = dat_clean
@@ -278,16 +216,9 @@ plt.show()
 del tmp
 ```
 
-</td>
-</tr>
-
-<tr>
-<td> 
+#### HTTP Method by Domain
 
 ![HTTP Method by Domain](/img/posts/2020/harexploratory/method_vs_domain.png)  
-
-</td>
-<td>
 
 ```python
 tmp = dat_clean
@@ -302,16 +233,9 @@ plt.show()
 del tmp
 ```
 
-</td>
-</tr>
-
-<tr>
-<td> 
+#### Third Party by Requests
 
 ![Third Party by Requests](/img/posts/2020/harexploratory/3rd_count.png)  
-
-</td>
-<td>
 
 ```python
 tmp = dat_clean
@@ -324,16 +248,9 @@ plt.show()
 del tmp
 ```
 
-</td>
-</tr>
-
-<tr>
-<td> 
+#### Third Party by Content Size
 
 ![Third Party by Content Size](/img/posts/2020/harexploratory/3d_size.png)  
-
-</td>
-<td>
 
 ```python
 tmp = dat_clean
@@ -347,16 +264,10 @@ plt.show()
 del tmp
 ```
 
-</td>
-</tr>
-
-<tr>
-<td> 
+#### HTTP Response Codes
 
 ![HTTP Response Codes](/img/posts/2020/harexploratory/status_codes.png)  
 
-</td>
-<td>
 
 ```python
 tmp = dat_clean 
@@ -369,16 +280,9 @@ plt.tight_layout()
 plt.show()
 ```
 
-</td>
-</tr>
-
-<tr>
-<td> 
+#### HTTP Status by Domain
 
 ![HTTP Status by Domain](/img/posts/2020/harexploratory/status_by_domain.png)  
-
-</td>
-<td>
 
 ```python
 tmp = dat_clean
@@ -392,16 +296,9 @@ plt.show()
 del tmp
 ```
 
-</td>
-</tr>
-
-<tr>
-<td> 
+#### HTTP Status by Domain
 
 ![HTTP Status by Domain](/img/posts/2020/harexploratory/status_by_domain.png)  
-
-</td>
-<td>
 
 ```python
 tmp = dat_clean
@@ -415,16 +312,9 @@ plt.show()
 del tmp
 ```
 
-</td>
-</tr>
+#### Extensions by Domain
 
-<tr>    
-<td> 
-
-![Extensions by Domain'](/img/posts/2020/harexploratory/ext_by_domain.png)  
-
-</td>
-<td>
+![Extensions by Domain](/img/posts/2020/harexploratory/ext_by_domain.png)  
 
 ```python
 tmp = dat_clean
@@ -436,20 +326,12 @@ plt.title('Extensions by Domain')
 plt.xlabel('Domain/Ext')
 plt.ylabel('Count')
 plt.show()
-
 del tmp 
 ```
 
-</td>
-</tr>
+#### Timing by Ext
 
-<tr>    
-<td> 
-
-![Timing by Ext'](/img/posts/2020/harexploratory/timing_by_ext.png)  
-
-</td>
-<td>
+![Timing by Ext](/img/posts/2020/harexploratory/timing_by_ext.png)  
 
 ```python
 tmp = dat_clean
@@ -463,25 +345,11 @@ plt.show()
 del tmp  
 ```
 
-</td>
-</tr>
-
-</table>
-
 ### Akamai Specific
 
-<table>
-<tr>
-<td> Chart </td> <td> Snippet </td>
-</tr>
-
-<tr>
-<td> 
+#### RO vs Origin
 
 ![RO vs Origin](/img/posts/2020/harexploratory/ro_vs_or.png)  
-
-</td>
-<td>
 
 ```python
 tmp = dat_clean
@@ -498,16 +366,9 @@ plt.show()
 del tmp
 ```
 
-</td>
-</tr>
-
-<tr>
-<td> 
+#### IM vs Origin
 
 ![IM vs Origin](/img/posts/2020/harexploratory/im_vs_or.png)  
-
-</td>
-<td>
 
 ```python
 tmp = dat_clean
@@ -523,16 +384,9 @@ plt.show()
 del tmp
 ```
 
-</td>
-</tr>
-
-<tr>
-<td> 
+#### Cache Status
 
 ![Cache Status](/img/posts/2020/harexploratory/cache_status.png)  
-
-</td>
-<td>
 
 ```python
 tmp = dat_clean 
@@ -547,16 +401,9 @@ plt.show()
 del tmp  
 ```
 
-</td>
-</tr>
+#### Cache Status by ext
 
-<tr>    
-<td> 
-
-![Cache Status by ext'](/img/posts/2020/harexploratory/cache_status_by_ext.png)  
-
-</td>
-<td>
+![Cache Status by ext](/img/posts/2020/harexploratory/cache_status_by_ext.png)  
 
 ```python
 tmp = dat_clean
@@ -571,16 +418,9 @@ plt.show()
 del tmp 
 ```
 
-</td>
-</tr>
+#### Edge vs Origin time by Ext
 
-<tr>    
-<td> 
-
-![Edge vs Origin time by Ext'](/img/posts/2020/harexploratory/edge_vs_or.png)  
-
-</td>
-<td>
+![Edge vs Origin time by Ext](/img/posts/2020/harexploratory/edge_vs_or.png)  
 
 ```python
 tmp = dat_clean
@@ -593,10 +433,6 @@ plt.ylabel('Milliseconds')
 plt.show()
 del tmp  
 ```
-
-</td>
-</tr>
-</table>
 
 
 ## Have fun!...
