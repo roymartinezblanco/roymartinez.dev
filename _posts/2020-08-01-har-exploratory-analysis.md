@@ -12,7 +12,7 @@ TLDR; How to read a HAR file and make charts out of the curated data.
 
 A while back I wrote an article that talks about how to analyze an HTTP Archive (HAR), this blog is similar to it but I want to share how we can also get a lot of analytics from them. This is especially useful when no RUM (like mPulse) data is available.
 
-[Har Analysis](https://roymartinez.dev/2019-06-05-har-analysis/)
+[Past Blog: Har Analysis](https://roymartinez.dev/2019-06-05-har-analysis/)
 
 What am I doing differently? This time I used Python libraries to provide multiple charts that can be of extreme use to us when consulting.
 
