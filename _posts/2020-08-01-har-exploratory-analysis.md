@@ -33,7 +33,7 @@ I preferred to run this on a Jupiter Notebook, for simpler use and management bu
 ![Cache Status](/img/posts/2020/harexploratory/cache-status.png)
 
 ## WHY?
-My use for this is, to quickly execute it and get a good idea of what is happening and where to focus/start looking. One example is the following chart, using browser timing data. On it, we see that a couple of domains could benefit from browser hints (Adaptive Acceleration) to reduce DNS time along with other of the timings shown.
+My use for this is, to quickly execute it and get a good idea of what is happening and where to focus/start looking. One example is the following chart, using browser timing data. On it, we see that a couple of domains could benefit from browser hints ([Adaptive Acceleration](https://developer.akamai.com/ion/adaptive-acceleration)) to reduce DNS time along with other of the timings shown.
 
 ![3rd Party Connect Timing](/img/posts/2020/harexploratory/3rd-connect-timings.png)
 
