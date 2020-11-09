@@ -8,5 +8,5 @@ In many scenarios, APIs are used as just another way to load resources such as i
 
 <iframe
   src="https://web.archive.org/web/20201109150223/https://developer.akamai.com/api-gateway-best-practices-api-resource"
-  style="width:100%; height:100%;"
+  style="width:100%; height:600px;"
 ></iframe>

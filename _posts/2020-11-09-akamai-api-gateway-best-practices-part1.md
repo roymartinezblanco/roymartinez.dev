@@ -3,6 +3,7 @@ layout: post
 title: API Gateway - The Standalone API
 tags: [API,APIGateway, devtools, akamai,automation]
 ---
+
 The API Gateway API is an efficient and secure way to register, manage, and deliver your APIs over the Akamai network. Read the docs to learn more about what the API Gateway API does and how it works.
 
 <iframe
