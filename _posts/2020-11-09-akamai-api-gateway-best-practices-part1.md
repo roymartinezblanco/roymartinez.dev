@@ -1,6 +1,7 @@
 ---
 layout: post
 title: API Gateway - The Standalone API
+image: /img/posts/2020/apigateway/api-gateway.png
 tags: [API,APIGateway, devtools, akamai,automation]
 ---
 
