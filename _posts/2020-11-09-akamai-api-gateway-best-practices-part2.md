@@ -1,7 +1,7 @@
 ---
 layout: post
-title: API Gateway:  API as a Resource
-tags: [API,API Gateway, devtools, akamai,automation]
+title: API Gateway - API as a Resource
+tags: [API,APIGateway, devtools, akamai,automation]
 ---
 
 <iframe

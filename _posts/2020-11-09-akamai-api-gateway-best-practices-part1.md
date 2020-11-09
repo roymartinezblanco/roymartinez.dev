@@ -1,6 +1,6 @@
 ---
 layout: post
-title: API Gateway: The Standalone API
+title: API Gateway - The Standalone API
 tags: [API, akamai, devops]
 ---
 
